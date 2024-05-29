@@ -1,0 +1,47 @@
+body{
+    background-color: bisque;
+}
+.main{
+    background-color: rgb(199, 155, 97);
+    height: 600px;
+    width: 60%;
+    margin-left: 290px;
+    margin-top: 60px;
+    text-align: center;
+}
+h1{
+    font-size: 45px;
+    padding-top: 20px;
+}
+.taskbox{
+    height: 450px;
+    width: 50%;
+    background-color: rgb(181, 228, 228);
+    margin-left: 235px;
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.task{
+    
+    display: flex;
+    margin-left: 70px;
+}
+.task_val{
+    cursor: url("cursor.png") 3 3,auto;
+    border: none;
+    background: transparent;
+    border-bottom: 5px;
+    border-color: black;
+    border-style: solid;
+    font-size: 25px;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.task:has(.task_check:checked){
+    order: 1;
+    color: black;
+    text-decoration: line-through 1.5px;
+}
+
